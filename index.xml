@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SuperMong&#39;s Blog</title>
-    <link>http://example.org/</link>
+    <link>https://supermong.github.io/</link>
     <description>Recent content on SuperMong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Nov 2021 21:35:06 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Nov 2021 21:35:06 +0800</lastBuildDate><atom:link href="https://supermong.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://supermong.github.io/posts/my-first-post/</link>
       <pubDate>Mon, 08 Nov 2021 21:35:06 +0800</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://supermong.github.io/posts/my-first-post/</guid>
       <description>Hello world, I&amp;rsquo;m SuperMong, come from China.
 This is my first post on the blog. In the future, I will post some of my study notes and essays in English ( A challenge ).
 It&amp;rsquo;s not clear yet, but this is the list of notes I am going to post:
