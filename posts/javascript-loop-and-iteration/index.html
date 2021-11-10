@@ -8,7 +8,8 @@
 <title>JavaScript Loop and Iteration | SuperMong&#39;s Blog</title>
 <meta name="keywords" content="" />
 <meta name="description" content="Same as all ( maybe ) programming languages, JavaScript has some statements for loop:
- while do&hellip;while for for&hellip;in for&hellip;of label break and continue Most of them are common in other languages, I only introduce for...in, for...of and label here.  for&hellip;in The for...in is a statement can traverse all enumerable properties of an object.
+ while do&hellip;while for for&hellip;in for&hellip;of label break and continue  Most of them are common in other languages, I only introduce for...in, for...of and label here.
+for&hellip;in The for...in is a statement can traverse all enumerable properties of an object.
 for (variable in object) { statements } The following function can return a string that lists the propertie names and their values:">
 <meta name="author" content="SuperMong">
 <link rel="canonical" href="https://supermong.github.io/posts/javascript-loop-and-iteration/" />
@@ -61,7 +62,8 @@ for (variable in object) { statements } The following function can return a stri
     </style>
 </noscript><meta property="og:title" content="JavaScript Loop and Iteration" />
 <meta property="og:description" content="Same as all ( maybe ) programming languages, JavaScript has some statements for loop:
- while do&hellip;while for for&hellip;in for&hellip;of label break and continue Most of them are common in other languages, I only introduce for...in, for...of and label here.  for&hellip;in The for...in is a statement can traverse all enumerable properties of an object.
+ while do&hellip;while for for&hellip;in for&hellip;of label break and continue  Most of them are common in other languages, I only introduce for...in, for...of and label here.
+for&hellip;in The for...in is a statement can traverse all enumerable properties of an object.
 for (variable in object) { statements } The following function can return a string that lists the propertie names and their values:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://supermong.github.io/posts/javascript-loop-and-iteration/" /><meta property="article:section" content="posts" />
@@ -71,7 +73,8 @@ for (variable in object) { statements } The following function can return a stri
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JavaScript Loop and Iteration"/>
 <meta name="twitter:description" content="Same as all ( maybe ) programming languages, JavaScript has some statements for loop:
- while do&hellip;while for for&hellip;in for&hellip;of label break and continue Most of them are common in other languages, I only introduce for...in, for...of and label here.  for&hellip;in The for...in is a statement can traverse all enumerable properties of an object.
+ while do&hellip;while for for&hellip;in for&hellip;of label break and continue  Most of them are common in other languages, I only introduce for...in, for...of and label here.
+for&hellip;in The for...in is a statement can traverse all enumerable properties of an object.
 for (variable in object) { statements } The following function can return a string that lists the propertie names and their values:"/>
 
 
@@ -101,11 +104,11 @@ for (variable in object) { statements } The following function can return a stri
   "@type": "BlogPosting",
   "headline": "JavaScript Loop and Iteration",
   "name": "JavaScript Loop and Iteration",
-  "description": "Same as all ( maybe ) programming languages, JavaScript has some statements for loop:\n while do\u0026hellip;while for for\u0026hellip;in for\u0026hellip;of label break and continue Most of them are common in other languages, I only introduce for...in, for...of and label here.  for\u0026hellip;in The for...in is a statement can traverse all enumerable properties of an object.\nfor (variable in object) { statements } The following function can return a string that lists the propertie names and their values:",
+  "description": "Same as all ( maybe ) programming languages, JavaScript has some statements for loop:\n while do\u0026hellip;while for for\u0026hellip;in for\u0026hellip;of label break and continue  Most of them are common in other languages, I only introduce for...in, for...of and label here.\nfor\u0026hellip;in The for...in is a statement can traverse all enumerable properties of an object.\nfor (variable in object) { statements } The following function can return a string that lists the propertie names and their values:",
   "keywords": [
     
   ],
-  "articleBody": "Same as all ( maybe ) programming languages, JavaScript has some statements for loop:\n while do…while for for…in for…of label break and continue Most of them are common in other languages, I only introduce for...in, for...of and label here.  for…in The for...in is a statement can traverse all enumerable properties of an object.\nfor (variable in object) { statements } The following function can return a string that lists the propertie names and their values:\nfunction list(obj) { let result = \"\"; for (let i in obj) { result += i + \": \" + obj[i] + \" \"; } return result; } For an object person with properties name and sex, list(person) will return “name: SuperMong sex: male “.\nNotice: If you want to traverse enumerable properties of an object, for...in is a good choice. But for an array (map, set, and so on), for...in will traverse user-defined properties, not array elements.\nfor…of Dirrerent from for...in, for...of statement traverse values of an object.\nfor (variable of object) { statements } The following code can make it clearly:\nvar arr = [5, 2, 6]; let sum = 0; for (let n of arr) { sum += n; // The value of sum is 5 + 2 + 6 = 13; } label The label can identify statements. It always be used with break and continue to control loops.\nlabel: statements A simple example:\nlet x = 0; someLoop: while (true) { x += 1; let y = 0; while (true) { y += 1; if (y === 9) { break someLoop; } } } ",
+  "articleBody": "Same as all ( maybe ) programming languages, JavaScript has some statements for loop:\n while do…while for for…in for…of label break and continue  Most of them are common in other languages, I only introduce for...in, for...of and label here.\nfor…in The for...in is a statement can traverse all enumerable properties of an object.\nfor (variable in object) { statements } The following function can return a string that lists the propertie names and their values:\nfunction list(obj) { let result = \"\"; for (let i in obj) { result += i + \": \" + obj[i] + \" \"; } return result; } For an object person with properties name and sex, list(person) will return “name: SuperMong sex: male “.\nNotice: If you want to traverse enumerable properties of an object, for...in is a good choice. But for an array (map, set, and so on), for...in will traverse user-defined properties, not array elements.\nfor…of Dirrerent from for...in, for...of statement traverse values of an object.\nfor (variable of object) { statements } The following code can make it clearly:\nvar arr = [5, 2, 6]; let sum = 0; for (let n of arr) { sum += n; // The value of sum is 5 + 2 + 6 = 13; } label The label can identify statements. It always be used with break and continue to control loops.\nlabel: statements A simple example:\nlet x = 0; someLoop: while (true) { x += 1; let y = 0; while (true) { y += 1; if (y === 9) { break someLoop; } } } ",
   "wordCount" : "264",
   "inLanguage": "en",
   "datePublished": "2021-11-10T17:56:40+08:00",
@@ -193,9 +196,9 @@ for (variable in object) { statements } The following function can return a stri
 <li>for&hellip;in</li>
 <li>for&hellip;of</li>
 <li>label</li>
-<li>break and continue
-Most of them are common in other languages, I only introduce <code>for...in</code>, <code>for...of</code> and <code>label</code> here.</li>
+<li>break and continue</li>
 </ul>
+<p>Most of them are common in other languages, I only introduce <code>for...in</code>, <code>for...of</code> and <code>label</code> here.</p>
 <h3 id="forin">for&hellip;in<a hidden class="anchor" aria-hidden="true" href="#forin">#</a></h3>
 <p>The <code>for...in</code> is a statement can traverse all enumerable properties of an object.</p>
 <pre tabindex="0"><code>for (variable in object) {

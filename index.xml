@@ -14,7 +14,8 @@
       
       <guid>https://supermong.github.io/posts/javascript-loop-and-iteration/</guid>
       <description>Same as all ( maybe ) programming languages, JavaScript has some statements for loop:
- while do&amp;hellip;while for for&amp;hellip;in for&amp;hellip;of label break and continue Most of them are common in other languages, I only introduce for...in, for...of and label here.  for&amp;hellip;in The for...in is a statement can traverse all enumerable properties of an object.
+ while do&amp;hellip;while for for&amp;hellip;in for&amp;hellip;of label break and continue  Most of them are common in other languages, I only introduce for...in, for...of and label here.
+for&amp;hellip;in The for...in is a statement can traverse all enumerable properties of an object.
 for (variable in object) { statements } The following function can return a string that lists the propertie names and their values:</description>
     </item>
     
