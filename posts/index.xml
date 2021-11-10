@@ -6,7 +6,18 @@
     <description>Recent content in Posts on SuperMong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Nov 2021 17:36:52 +0800</lastBuildDate><atom:link href="https://supermong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Nov 2021 17:56:40 +0800</lastBuildDate><atom:link href="https://supermong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Loop and Iteration</title>
+      <link>https://supermong.github.io/posts/javascript-loop-and-iteration/</link>
+      <pubDate>Wed, 10 Nov 2021 17:56:40 +0800</pubDate>
+      
+      <guid>https://supermong.github.io/posts/javascript-loop-and-iteration/</guid>
+      <description>Same as all ( maybe ) programming languages, JavaScript has some statements for loop:
+ while do&amp;hellip;while for for&amp;hellip;in for&amp;hellip;of label break and continue Most of them are common in other languages, I only introduce for...in, for...of and label here.  for&amp;hellip;in The for...in is a statement can traverse all enumerable properties of an object.
+for (variable in object) { statements } The following function can return a string that lists the propertie names and their values:</description>
+    </item>
+    
     <item>
       <title>How to write a commit message in Git?</title>
       <link>https://supermong.github.io/posts/how-to-wirte-git-commit-message/</link>
