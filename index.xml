@@ -6,7 +6,18 @@
     <description>Recent content on SuperMong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Nov 2021 17:56:40 +0800</lastBuildDate><atom:link href="https://supermong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Nov 2021 10:25:10 +0800</lastBuildDate><atom:link href="https://supermong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Closure</title>
+      <link>https://supermong.github.io/posts/javascript-closure/</link>
+      <pubDate>Thu, 11 Nov 2021 10:25:10 +0800</pubDate>
+      
+      <guid>https://supermong.github.io/posts/javascript-closure/</guid>
+      <description>Closure is one of the most important features of JavaScript, and its hard to understand. As a JavaScript novice, I write down my understanding of closure here.
+Function scope Let&amp;rsquo;s start with function scope. The rule of function scope is simple: Inside function can access all the scopes that outside function can access, but outside function can&amp;rsquo;t access inside function&amp;rsquo;s scope.
+function outside() { var outVar = &amp;#34;out variable&amp;#34;; function inside() { var inVar = &amp;#34;in variable&amp;#34;; return outVar + &amp;#34; + &amp;#34; + inVar;	// return: &amp;#34;out variable + in variable&amp;#34;  } return outVar + &amp;#34; + &amp;#34; + inVar;	// Error: can not access variable &amp;#39;inVar&amp;#39; } What happens if multiple functions are nested?</description>
+    </item>
+    
     <item>
       <title>JavaScript Loop and Iteration</title>
       <link>https://supermong.github.io/posts/javascript-loop-and-iteration/</link>
