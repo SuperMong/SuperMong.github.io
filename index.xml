@@ -6,7 +6,17 @@
     <description>Recent content on SuperMong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Nov 2021 21:44:31 +0800</lastBuildDate><atom:link href="https://supermong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 10:10:10 +0800</lastBuildDate><atom:link href="https://supermong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Regular Expression Basics</title>
+      <link>https://supermong.github.io/posts/regular-expression-basics/</link>
+      <pubDate>Fri, 12 Nov 2021 10:10:10 +0800</pubDate>
+      
+      <guid>https://supermong.github.io/posts/regular-expression-basics/</guid>
+      <description>Regular Expression is a powerful and complex tool for processing string. Using it can greatly improve work efficiency, but due to its complexity, novices are often discouraged.
+I have learned regular expression many times, but I forget everytime bucause lack of practice. So I writing this blog to remind me that only by using it can learn it.</description>
+    </item>
+    
     <item>
       <title>My Air Fryer Recipe</title>
       <link>https://supermong.github.io/posts/my-air-fryer-recipe/</link>
