@@ -6,7 +6,17 @@
     <description>Recent content in Posts on SuperMong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Nov 2021 10:10:10 +0800</lastBuildDate><atom:link href="https://supermong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Nov 2021 17:15:38 +0800</lastBuildDate><atom:link href="https://supermong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compiler Principles Introduce</title>
+      <link>https://supermong.github.io/posts/compiler-principles-introduce/</link>
+      <pubDate>Sun, 14 Nov 2021 17:15:38 +0800</pubDate>
+      
+      <guid>https://supermong.github.io/posts/compiler-principles-introduce/</guid>
+      <description>In college, compiler principles was a boring course for me, because I tought it was useless to me. After working for a while, I think mastering it is very helpful for me. So I started to learn it again (serious).
+Today, most programmers write programs in heigh-level languages. These languages provide a high level of abstraction to make programming easier. Naturally, there is a question: &amp;ldquo;How does the computer run these heigh-level programs?</description>
+    </item>
+    
     <item>
       <title>Regular Expression Basics</title>
       <link>https://supermong.github.io/posts/regular-expression-basics/</link>
