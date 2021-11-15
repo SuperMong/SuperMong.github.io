@@ -100,8 +100,8 @@ Today, most programmers write programs in heigh-level languages. These languages
   "keywords": [
     
   ],
-  "articleBody": "In college, compiler principles was a boring course for me, because I tought it was useless to me. After working for a while, I think mastering it is very helpful for me. So I started to learn it again (serious).\nToday, most programmers write programs in heigh-level languages. These languages provide a high level of abstraction to make programming easier. Naturally, there is a question: “How does the computer run these heigh-level programs?” And the answer is: “Using compiler or interpreter.”\nThis blog introduces what compiler and interpreter is, their defferences and the structure fo compiler.\nCompiler and Interpreter Interpreter comes first, which directly uses input provided by user to perform the specified operation in the source code. The input of interpreter is data and source code, and the output is the result of source code.\nInterpreter is good, but it has two disadvantages:\n occupies memory when running the program running slow  To overcome the shortcommings of interpreter, compiler appear. A compiler is a program that can translate source code into target code. The input of compiler is source code only, and the output is the target code. After getting target code, using assembler and linker to get executable program. The executable program obtained in this way is 10 to 20 times faster than using interpreter, and computer can run program without compiler.\nIs the compiler better than interpreter in any way? The answer is no, for example, interpreter provides better error checking. Compiler and interpreter each has their advantages.\nStructure of Compiler ",
-  "wordCount" : "253",
+  "articleBody": "In college, compiler principles was a boring course for me, because I tought it was useless to me. After working for a while, I think mastering it is very helpful for me. So I started to learn it again (serious).\nToday, most programmers write programs in heigh-level languages. These languages provide a high level of abstraction to make programming easier. Naturally, there is a question: “How does the computer run these heigh-level programs?” And the answer is: “Using compiler or interpreter.”\nThis blog introduces what compiler and interpreter is, their defferences and the structure fo compiler.\nCompiler and Interpreter Interpreter comes first, which directly uses input provided by user to perform the specified operation in the source code. The input of interpreter is data and source code, and the output is the result of source code.\nInterpreter is good, but it has two disadvantages: 1.occupies memory when running the program 2.running slow\nTo overcome the shortcommings of interpreter, compiler appear. A compiler is a program that can translate source code into object code. The input of compiler is source code only, and the output is the object code. After getting object code, using assembler and linker to get executable program. The executable program obtained in this way is 10 to 20 times faster than using interpreter, and computer can run program without compiler.\nIs the compiler better than interpreter in any way? The answer is no, for example, interpreter provides better error checking. Compiler and interpreter each has their advantages. Following table shows the differencs between them:\n   Compiler Interpreter     off-line on-line   quick slow   worse error checking better error checking   not cross platform cross platform   input: source code input: source code and data   output: object code output: result of program    Structure of Compiler Compiler is complicated, in order to make it easier to design and understand, we divided it into two parts: Front end for processing input and back end for processing output. These two parts can also\n",
+  "wordCount" : "327",
   "inLanguage": "en",
   "datePublished": "2021-11-14T17:15:38+08:00",
   "dateModified": "2021-11-14T17:15:38+08:00",
@@ -180,19 +180,59 @@ Today, most programmers write programs in heigh-level languages. These languages
 
 </div>
   </header> 
-  <div class="post-content"><p>In college, compiler principles was a boring course for me, because I tought it was useless to me. After working for a while, I think mastering it is very helpful for me. So I started to learn it again (serious).</p>
-<p>Today, most programmers write programs in heigh-level languages. These languages provide a high level of abstraction to make programming easier. Naturally, there is a question: &ldquo;How does the computer run these heigh-level programs?&rdquo; And the answer is: &ldquo;Using compiler or interpreter.&rdquo;</p>
+  <div class="post-content"><p>In college, compiler principles was a boring course for me, because I tought it was useless to me.
+After working for a while, I think mastering it is very helpful for me. So I started to learn it again (serious).</p>
+<p>Today, most programmers write programs in heigh-level languages. These languages provide a high level of abstraction to make programming easier.
+Naturally, there is a question: &ldquo;How does the computer run these heigh-level programs?&rdquo; And the answer is: &ldquo;Using compiler or interpreter.&rdquo;</p>
 <p>This blog introduces what compiler and interpreter is, their defferences and the structure fo compiler.</p>
 <h3 id="compiler-and-interpreter">Compiler and Interpreter<a hidden class="anchor" aria-hidden="true" href="#compiler-and-interpreter">#</a></h3>
-<p>Interpreter comes first, which directly uses input provided by user to perform the specified operation in the source code. The input of interpreter is data and source code, and the output is the result of source code.</p>
-<p>Interpreter is good, but it has two disadvantages:</p>
-<ol>
-<li>occupies memory when running the program</li>
-<li>running slow</li>
-</ol>
-<p>To overcome the shortcommings of interpreter, compiler appear. <strong>A compiler is a program that can translate source code into target code.</strong> The input of compiler is source code only, and the output is the target code. After getting target code, using assembler and linker to get executable program. The executable program obtained in this way is 10 to 20 times faster than using interpreter, and computer can run program without compiler.</p>
-<p>Is the compiler better than interpreter in any way? The answer is no, for example, interpreter provides better error checking. Compiler and interpreter each has their advantages.</p>
+<p>Interpreter comes first, which directly uses input provided by user to perform the specified operation in the source code.
+The input of interpreter is data and source code, and the output is the result of source code.</p>
+<p>Interpreter is good, but it has two disadvantages: 1.occupies memory when running the program 2.running slow</p>
+<p>To overcome the shortcommings of interpreter, compiler appear. <strong>A compiler is a program that can translate source code into object code.</strong>
+The input of compiler is source code only, and the output is the object code. After getting object code, using assembler and linker to get executable program.
+The executable program obtained in this way is 10 to 20 times faster than using interpreter, and computer can run program without compiler.</p>
+<p>Is the compiler better than interpreter in any way?
+The answer is no, for example, interpreter provides better error checking.
+Compiler and interpreter each has their advantages. Following table shows the differencs between them:</p>
+<table>
+<thead>
+<tr>
+<th>Compiler</th>
+<th>Interpreter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>off-line</td>
+<td>on-line</td>
+</tr>
+<tr>
+<td>quick</td>
+<td>slow</td>
+</tr>
+<tr>
+<td>worse error checking</td>
+<td>better error checking</td>
+</tr>
+<tr>
+<td>not cross platform</td>
+<td>cross platform</td>
+</tr>
+<tr>
+<td>input: source code</td>
+<td>input: source code and data</td>
+</tr>
+<tr>
+<td>output: object code</td>
+<td>output: result of program</td>
+</tr>
+</tbody>
+</table>
 <h3 id="structure-of-compiler">Structure of Compiler<a hidden class="anchor" aria-hidden="true" href="#structure-of-compiler">#</a></h3>
+<p>Compiler is complicated, in order to make it easier to design and understand, we divided it into two parts:
+<strong>Front end for processing input and back end for processing output.</strong>
+These two parts can also</p>
 
 
   </div>
