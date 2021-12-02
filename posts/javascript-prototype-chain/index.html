@@ -184,17 +184,11 @@ When accessing the perproties of an object, javascript first looks in the object
 </div>
   </header> 
   <div class="post-content"><p>Prototype chain of javascript is confuses me for a long time. This blog writes down my understanding.</p>
-<p>JavaScript only has one conscruct: object. Every object has a property which points to its prototype
-object, and this prototype object also has a prototype object, until one prototype is null. This
-structure is called prototype chain.</p>
-<p>When accessing the perproties of an object, javascript first looks in the object itself, if it is
-not found, it will continue searching along the prototype chain until it finds or reaches the end of
-the chain.</p>
+<p>JavaScript only has one conscruct: object. Every object has a property which points to its prototype object, and this prototype object also has a prototype object, until one prototype is null. This structure is called prototype chain.</p>
+<p>When accessing the perproties of an object, javascript first looks in the object itself, if it is not found, it will continue searching along the prototype chain until it finds or reaches the end of the chain.</p>
 <h3 id="prototype">Prototype<a hidden class="anchor" aria-hidden="true" href="#prototype">#</a></h3>
-<p>For function, the property <strong>prototype</strong> points to its prototype object. For another object, the
-property <strong>[[Prototype]]</strong> points to its prototype object, which is the prototype object of its constructor.</p>
-<p><strong>Notice</strong>: a function is also a object in javascript, so function also has property <code>[[Prototype]]</code>
-(but other kinds of objects do not have property <code>prototype</code>).</p>
+<p>For function, the property <strong>prototype</strong> points to its prototype object. For another object, the property <strong>[[Prototype]]</strong> points to its prototype object, which is the prototype object of its constructor.</p>
+<p><strong>Notice</strong>: a function is also a object in javascript, so function also has property <code>[[Prototype]]</code> (but other kinds of objects do not have property <code>prototype</code>).</p>
 <p>For example, there is a constructor <code>Animal</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="color:#8be9fd;font-style:italic">function</span> Animal(food, family) {
     <span style="color:#ff79c6">this</span>.food <span style="color:#ff79c6">=</span> food;
@@ -208,8 +202,7 @@ console.log(animal1.[[Prototype]] <span style="color:#ff79c6">===</span> Animal.
 <li>constructor: points to its constructor: <code>Animal</code></li>
 <li>[[Prototype]]: points to its prototype: usually <code>Object.prototype</code></li>
 </ul>
-<p><strong>Object is at the top of almost all prototype chains</strong>, the <code>[[Prototype]]</code> and <code>Object.prototype.[[Prototype]]</code>
-of it are null.</p>
+<p><strong>Object is at the top of almost all prototype chains</strong>, the <code>[[Prototype]]</code> and <code>Object.prototype.[[Prototype]]</code> of it are null.</p>
 <h3 id="inheritance">Inheritance<a hidden class="anchor" aria-hidden="true" href="#inheritance">#</a></h3>
 <p>We can use prototype chain to achieve inheritance, this needs a empty function:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="color:#8be9fd;font-style:italic">function</span> Cat(name) {
@@ -233,16 +226,14 @@ Cat.prototype.constructor <span style="color:#ff79c6">=</span> Cat;
 <span style="color:#8be9fd;font-style:italic">var</span> cat1 <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> Cat(<span style="color:#f1fa8c">&#34;Mong&#34;</span>);
 console.log(cat1.[[Prototype]] <span style="color:#ff79c6">===</span> Cat.protptype);  <span style="color:#6272a4">// true
 </span><span style="color:#6272a4"></span>console.log(Cat.prototype.[[Prototype]] <span style="color:#ff79c6">===</span> Animel.prototype);  <span style="color:#6272a4">// true
-</span></code></pre></div><p>The code above implements inheritance relationship, but it&rsquo;s a bit complicated. Fortunately, there
-is a more simplified method:</p>
+</span></code></pre></div><p>The code above implements inheritance relationship, but it&rsquo;s a bit complicated. Fortunately, there is a more simplified method:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="color:#8be9fd;font-style:italic">function</span> Cat(name) {
     Animal.call(<span style="color:#ff79c6">this</span>, fish, <span style="color:#f1fa8c">&#34;cat&#34;</span>);
     <span style="color:#ff79c6">this</span>.name <span style="color:#ff79c6">=</span> name;
 }
 Cat.prototype <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">Object</span>.create(<span style="color:#ff79c6">new</span> Animal);
 Cat.prototype.constructor <span style="color:#ff79c6">=</span> Cat;
-</code></pre></div><p>Method <code>Object.create</code> creates a new object, the prototype of the new object is the first parameter
-passed in when method is called.</p>
+</code></pre></div><p>Method <code>Object.create</code> creates a new object, the prototype of the new object is the first parameter passed in when method is called.</p>
 
 
   </div>
