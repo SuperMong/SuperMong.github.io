@@ -6,7 +6,18 @@
     <description>Recent content in Posts on SuperMong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Nov 2021 09:07:42 +0800</lastBuildDate><atom:link href="https://supermong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Nov 2021 14:00:44 +0800</lastBuildDate><atom:link href="https://supermong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Prototype Chain</title>
+      <link>https://supermong.github.io/posts/javascript-prototype-chain/</link>
+      <pubDate>Wed, 24 Nov 2021 14:00:44 +0800</pubDate>
+      
+      <guid>https://supermong.github.io/posts/javascript-prototype-chain/</guid>
+      <description>Prototype chain of javascript is confuses me for a long time. This blog writes down my understanding.
+JavaScript only has one conscruct: object. Every object has a property which points to its prototype object, and this prototype object also has a prototype object, until one prototype is null. This structure is called prototype chain.
+When accessing the perproties of an object, javascript first looks in the object itself, if it is not found, it will continue searching along the prototype chain until it finds or reaches the end of the chain.</description>
+    </item>
+    
     <item>
       <title>JavaScript Object</title>
       <link>https://supermong.github.io/posts/javascript-object/</link>
