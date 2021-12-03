@@ -6,7 +6,19 @@
     <description>Recent content on SuperMong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Nov 2021 14:00:44 +0800</lastBuildDate><atom:link href="https://supermong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Dec 2021 13:34:49 +0800</lastBuildDate><atom:link href="https://supermong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Promise</title>
+      <link>https://supermong.github.io/posts/javascript-promise/</link>
+      <pubDate>Thu, 02 Dec 2021 13:34:49 +0800</pubDate>
+      
+      <guid>https://supermong.github.io/posts/javascript-promise/</guid>
+      <description>It&amp;rsquo;s time to explain promise, an object used to write asynchronous code. But before, let&amp;rsquo;s take a look at the old school method.
+Old School An old method is callback function: .
+function async(value, callback); Take the function as a parameter and call it when needed. For example, we want to load an image then
+function mark() { }</description>
+    </item>
+    
     <item>
       <title>JavaScript Prototype Chain</title>
       <link>https://supermong.github.io/posts/javascript-prototype-chain/</link>
