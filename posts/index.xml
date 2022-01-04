@@ -6,17 +6,17 @@
     <description>Recent content in Posts on SuperMong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Dec 2021 13:34:49 +0800</lastBuildDate><atom:link href="https://supermong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Dec 2021 16:20:47 +0800</lastBuildDate><atom:link href="https://supermong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>JavaScript Promise</title>
+      <title>Javascript Promise</title>
       <link>https://supermong.github.io/posts/javascript-promise/</link>
-      <pubDate>Thu, 02 Dec 2021 13:34:49 +0800</pubDate>
+      <pubDate>Thu, 09 Dec 2021 16:20:47 +0800</pubDate>
       
       <guid>https://supermong.github.io/posts/javascript-promise/</guid>
-      <description>It&amp;rsquo;s time to explain promise, an object used to write asynchronous code. But before, let&amp;rsquo;s take a look at the old school method.
-Old School An old method is callback function: .
-function async(value, callback); Take the function as a parameter and call it when needed. For example, we want to load an image then
-function mark() { }</description>
+      <description>Promise is object used to handle asynchronous task, it represents the completion or failure of an asynchronous task.
+Old School Before promise appeared, we use callback function to write asynchronous code. Usually this format:
+function async(value, successCallback, failureCallback) { // ...  if (someCondition) successCallback(value); if (otherCondition) failureCallback(value); } Callback is good, but it has some shortages, the most obvious is callback hell. What happends to nested asynchronous tasks?
+async(value, function(value) { // .</description>
     </item>
     
     <item>

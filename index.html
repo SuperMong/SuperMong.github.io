@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://supermong.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.89.4" />
+<meta name="generator" content="Hugo 0.91.2" />
 <link rel="alternate" type="application/rss+xml" href="https://supermong.github.io/index.xml">
 <link rel="alternate" type="application/json" href="https://supermong.github.io/index.json">
 <noscript>
@@ -128,17 +128,17 @@
 
 <article class="first-entry"> 
   <header class="entry-header">
-    <h2>JavaScript Promise<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    <h2>Javascript Promise<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
     </h2>
   </header>
   <section class="entry-content">
-    <p>It’s time to explain promise, an object used to write asynchronous code. But before, let’s take a look at the old school method.
-Old School An old method is callback function: .
-function async(value, callback); Take the function as a parameter and call it when needed. For example, we want to load an image then
-function mark() { }</p>
+    <p>Promise is object used to handle asynchronous task, it represents the completion or failure of an asynchronous task.
+Old School Before promise appeared, we use callback function to write asynchronous code. Usually this format:
+function async(value, successCallback, failureCallback) { // ...  if (someCondition) successCallback(value); if (otherCondition) failureCallback(value); } Callback is good, but it has some shortages, the most obvious is callback hell. What happends to nested asynchronous tasks?
+async(value, function(value) { // ....</p>
   </section>
-  <footer class="entry-footer"><span title='2021-12-02 13:34:49 +0800 +0800'>December 2, 2021</span>&nbsp;·&nbsp;SuperMong</footer>
-  <a class="entry-link" aria-label="post link to JavaScript Promise" href="https://supermong.github.io/posts/javascript-promise/"></a>
+  <footer class="entry-footer"><span title='2021-12-09 16:20:47 +0800 +0800'>December 9, 2021</span>&nbsp;·&nbsp;SuperMong</footer>
+  <a class="entry-link" aria-label="post link to Javascript Promise" href="https://supermong.github.io/posts/javascript-promise/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -272,7 +272,7 @@ It’s not clear yet, but this is the list of notes I am going to post:
     </main>
     
 <footer class="footer">
-    <span>&copy; 2021 <a href="https://supermong.github.io">SuperMong&#39;s Blog</a></span>
+    <span>&copy; 2022 <a href="https://supermong.github.io">SuperMong&#39;s Blog</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
